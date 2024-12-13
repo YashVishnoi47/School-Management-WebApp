@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Profile</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body class="h-screen w-full gap-0 flex bg-[#FBFBFD] ">
+
+    <div class="w-[20%] h-full bg-white flex flex-col items-center">
+        <div class="dashboard w-full py-5 px-2 ">
+            <h1 class="font-semibold text-2xl">Dashboard</h1>
+        </div>
+
+        <a href=""
+            class="w-[80%] mt-8 hover:bg-slate-200 hover:scale-[1.09] rounded-2xl hover:shadow-black-shadow  transition-all duration-200 ease-in-out py-3 text-xl flex justify-start px-4 items-center ">
+            <p class="flex justify-between  gap-6 items-center "> <img class="h-8" src="/images/notice.png" alt="">
+                <span>Notices</span>
+            </p>
+        </a>
+        <a href=""
+            class="w-[80%] mt-2 hover:bg-slate-200 hover:scale-[1.09] rounded-2xl hover:shadow-black-shadow  transition-all duration-200 ease-in-out py-3 text-xl flex justify-start px-4 items-center ">
+            <p class="flex justify-between  gap-6 items-center "> <img class="h-8" src="/images/notice.png" alt="">
+                <span>Notices</span>
+            </p>
+        </a>
+        <a href=""
+            class="w-[80%] mt-2 hover:bg-slate-200 hover:scale-[1.09] rounded-2xl hover:shadow-black-shadow  transition-all duration-200 ease-in-out py-3 text-xl flex justify-start px-4 items-center ">
+            <p class="flex justify-between  gap-6 items-center "> <img class="h-8" src="/images/notice.png" alt="">
+                <span>Notices</span>
+            </p>
+        </a>
+
+    </div>
+
+    <div class=" body-2 h-screen w-full flex flex-col items-end">
+
+        <div class="navbar bg-white p-4 w-full h-[10%] flex  ">
+            <div class="nav-left flex items-center relative w-[50%] h-full ">
+                <h1 class="text-3xl">Logo</h1>
+            </div>
+
+            <div class="nav-right flex items-center justify-end relative w-[50%] h-full">
+                <div class="nav-btns flex gap-8">
+                    <a href="">Send Messages</a>
+                    <a href="/owner/ownerprofile">DashBoard</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="owner-div w-full mt-4 bg-[#fbfbfd] justify-center gap-10  px-2 items-center relative h-[40%] flex ">
+
+            <div
+                class="owner-div-left transition-all duration-300 ease-in-out hover:shadow-black-shadow relative bg-white  flex flex-col rounded-xl p-2 gap-0 items-center w-1/2 h-[90%]">
+
+                <div class="owner-top flex justify-between p-4 gap-4 items-center w-full h-[20%]">
+                    <h1 class="font-medium text-xl">Tools Panel</h1>
+                    <a class=" rounded-full py-2 px-3 hover:bg-red-600 hover:text-white transition-all duration-200 ease-in-out"
+                        href="">Delete</a>
+                </div>
+
+                <div class="owner-down justify-center flex p-4 gap-4 items-center w-full h-[80%] ">
+
+                    <a href="/student/createstudent"
+                        class="createStudent hover:scale-[0.97] bg-[#FFE2E6] rounded-2xl transition-all duration-100 ease-in-out flex flex-col text-left  justify-between items-start p-3 w-[20%] h-[80%] ">
+                        <img class="h-8" src="/images/add student.png" alt="">
+                        <h1 class="font-medium text-2xl">
+                            <%= student.length %>
+                        </h1>
+                        <h1 class="font-medium text-sm">Add Student</h1>
+                        <h1 class="font-medium text-xs text-blue-700">All Students</h1>
+                    </a>
+
+                    <a href="/teacher/createTeacher"
+                        class="createStudent hover:scale-[0.97] bg-[#FFF4de] rounded-2xl transition-all duration-100 ease-in-out flex-col text-left  justify-between items-start p-3 w-[20%] h-[80%] ">
+                        <img class="h-8" src="/images/add teacher.png" alt="">
+                        <h1 class="font-medium text-2xl">
+                            <%= teacher.length %>
+                        </h1>
+                        <h1 class="font-medium text-sm">Add Teacher</h1>
+                        <h1 class="font-medium text-xs text-blue-700">All Students</h1>
+                    </a>
+
+                    <a href="/teacher/createTeacher"
+                        class="createStudent hover:scale-[0.97] bg-[#dcfce7] rounded-2xl transition-all duration-100 ease-in-out flex-col text-left  justify-between items-start p-3 w-[20%] h-[80%] ">
+                        <img class="h-8" src="/images/mesage.png" alt="">
+                        <h1 class="font-medium text-2xl">
+                            <%= teacher.length %>
+                        </h1>
+                        <h1 class="font-medium text-sm">Create Class</h1>
+                        <h1 class="font-medium text-xs text-blue-700">All Students</h1>
+                    </a>
+
+
+                    <a href="/teacher/createTeacher"
+                        class="createStudent hover:scale-[0.97] bg-[#dcfce7] rounded-2xl transition-all duration-100 ease-in-out flex-col text-left  justify-between items-start p-3 w-[20%] h-[80%] ">
+                        <img class="h-8" src="/images/gear.png" alt="">
+                        <h1 class="font-medium text-2xl">
+                            <%= teacher.length %>
+                        </h1>
+                        <h1 class="font-medium text-sm">Create Class</h1>
+                        <h1 class="font-medium text-xs text-blue-700">All Students</h1>
+                    </a>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="owner-div-right flex justify-center bg-[#fbfbfd] items-center relative w-[40%] h-full">
+                <div
+                    class="owner-card bg-white   transition-all duration-300 ease-in-out flex w-[90%] h-[90%] rounded-2xl hover:shadow-black-shadow">
+                    <div class="owner-card-left flex justify-center items-center relative rounded-2xl w-[40%]  ">
+                        <img class="h-24" src="/images/manager.png" alt="IMg">
+                    </div>
+
+                    <div class="owner-card-right p-4 flex justify-center flex-col gap-2 relative rounded-2xl w-[60%]  ">
+                        <p class="flex gap-2"><Span class="font-bold">Admin:-</Span>
+                            <%= owner.fullname %>
+                        </p>
+                        <p class="flex gap-2"><Span class="font-bold">Name:-</Span>
+                            <%= owner.username %>
+                        </p>
+                        <p class="flex gap-2"><Span class="font-bold">Email:-</Span>
+                            <%= owner.email %>
+                        </p>
+                        <div>
+                            <a class="border-2 mt-2 w-[50%] hover:bg-[#F0F8FF] transition-all duration-200 ease-in-out flex justify-center items-center"
+                                href="">Edit</a>
+                            <a class="border-2 mt-2 w-[50%] hover:bg-[#F0F8FF] transition-all duration-200 ease-in-out flex justify-center items-center"
+                                href="/owner/ownerlogout">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="tools-panel-2 w-full px-2 flex justify-center gap-10 items-center mt-2 h-[50%]">
+
+            <div class="owner-div-left flex justify-center bg-[#fbfbfd] items-center relative w-[40%] h-full">
+                <div
+                    class="owner-card bg-white   transition-all duration-300 ease-in-out flex w-[90%] h-[90%] rounded-2xl hover:shadow-black-shadow">
+                    <div class="owner-card-left flex justify-center items-center relative rounded-2xl w-[40%]  ">
+                        <p>Manage Classes</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="tools-panel-2-div-right  transition-all duration-300 ease-in-out hover:shadow-black-shadow relative bg-white  flex flex-col rounded-xl p-2 gap-0 items-center w-1/2 h-[90%]">
+
+                <div class="tools-panel-2-top flex justify-between p-4 gap-4 items-center w-full h-[20%]">
+                    <h1 class="font-medium text-xl">Complains</h1>
+                    <a class=" rounded-full py-2 px-3 hover:bg-orange-500 hover:text-white transition-all duration-200 ease-in-out"
+                        href="">See all</a>
+                </div>
+                <div class="tools-panel-2-down justify-center flex p-4 gap-4  w-full m-h-[80%] ">
+
+                    <div class="complains flex flex-col items-center gap-4  w-full h-full">
+
+                        <div class="complain w-full h-[35%] border-2 p-2 relative flex justify-between">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-green-600 font-semibold">Student name</p>
+                                <p>Title</p>
+                            </div>
+                            <div class="h-full flex flex-col justify-center">
+
+                                <div class="flex gap-2 justify-center items-center">
+                                    <a href="">Tick</a>
+                                    <a href="">Right</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="complain w-full h-[35%] border-2 p-2 relative flex justify-between">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-green-600 font-semibold">Student name</p>
+                                <p>Title</p>
+                            </div>
+                            <div class="h-full flex flex-col justify-center">
+
+                                <div class="flex gap-2 justify-center items-center">
+                                    <a href="">Tick</a>
+                                    <a href="">Right</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="complain w-full h-[35%] border-2 p-2 relative flex justify-between">
+                            <div class="flex flex-col gap-1">
+                                <p class="text-green-600 font-semibold">Student name</p>
+                                <p>Title</p>
+                            </div>
+                            <div class="h-full flex flex-col justify-center">
+
+                                <div class="flex gap-2 justify-center items-center">
+                                    <a href="">Tick</a>
+                                    <a href="">Right</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

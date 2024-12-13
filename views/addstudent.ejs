@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="w-full h-screen select-none">
+    <div class="navbar p-4 w-full h-[10%] flex border-2 border-black ">
+        <div class="nav-left flex items-center relative w-[50%] h-full ">
+            <h1 class="text-3xl">Logo</h1>
+        </div>
+
+        <div class="nav-right flex items-center justify-end relative w-[50%] h-full">
+            <div class="nav-btns flex gap-8">
+                <a href="">All Messages</a>
+                <a href="/owner/ownerprofile">DashBoard</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="student-login-form w-full h-full gap-10 flex justify-center items-center flex-col">
+        <form class="student-form relative flex flex-col items-center shadow-black-shadow rounded-3xl   border-2 p-4 min-w-[70%] h-[80%]" action="/student/createstudent" method="post">
+            <h1 class="font-medium text-4xl mt-2 absolute">Add Student</h1>
+
+            <div class="relative w-full flex h-[80%] mt-2">
+                <div class="input-fields gap-8 mt-28 items-center flex flex-col relative w-full h-full">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="text" name="studentName" placeholder="Name"   id="student-inputs">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="email" name="studentEmail" placeholder="Email"  id="student-inputs">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="password" name="studentPassword" placeholder="Password"  id="student-inputs">
+                </div>
+    
+                <div class="input-fields gap-8 mt-28  items-center flex flex-col relative w-full h-full">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="number" name="studentClass" placeholder="Class"   id="student-inputs">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="number" name="studentNumber" placeholder="Mob."  id="student-inputs">
+                    <input class=" w-[80%] h-[10%] p-2 outline-none focus:outline-[#7CB9E8] focus:placeholder:text-[#7CB9E8] focus:shadow-none shadow-md  transition-all duration-300 ease-in-out" type="password" name="studentADD" placeholder="Add"  id="student-inputs">
+                </div>
+            </div>
+
+            <% if (error && error.length > 0) { %>
+                <p class="p-3 font-bold rounded-xl bg-red-500 text-white inline-block  absolute">
+                    <%= error %>
+                </p >
+            <% } %>
+            <input class="border-2 relative py-2 px-3 w-1/2 transition-all duration-200 ease-in-out cursor-pointer hover:bg-[#7CB9E8] active:scale-95 " type="submit" value="Add Student">
+        </form>
+    </div>
+    
+</body>
+</html>

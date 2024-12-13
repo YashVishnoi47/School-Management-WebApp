@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add Students to <%= classInfo.className %> (<%= classInfo.classSection %>)</h1>
+
+
+    <form id="addStudentsForm" method="POST" action="/addStudentsToClass/<%= classInfo._id %>">
+        <div id="selectedStudents">
+            <input type="text" name="studentName" placeholder="Search by Student-Name" />
+        </div>
+        <button type="submit">Add Students</button>
+    </form>
+
+
+
+    <!-- <script>
+    const searchForm = document.getElementById('searchForm');
+    const searchQuery = document.getElementById('searchQuery');
+    const studentResults = document.getElementById('studentResults');
+    const selectedStudents = document.getElementById('selectedStudents');
+    const addStudentsForm = document.getElementById('addStudentsForm');
+
+    searchForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const query = searchQuery.value;
+        const response = await fetch(`/searchStudents?query=${query}`);
+        const students = await response.json();
+
+        studentResults.innerHTML = '';
+        students.forEach(student => {
+            const studentDiv = document.createElement('div');
+            studentDiv.textContent = `${student.name} (${student.rollNumber})`;
+            studentDiv.dataset.id = student._id;
+
+            const addButton = document.createElement('button');
+            addButton.textContent = 'Add';
+            addButton.addEventListener('click', () => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'studentIds[]';
+                input.value = student._id;
+
+                addStudentsForm.appendChild(input);
+
+                const selectedDiv = document.createElement('div');
+                selectedDiv.textContent = `${student.name} (${student.rollNumber})`;
+                selectedStudents.appendChild(selectedDiv);
+
+                studentDiv.remove();
+            });
+
+            studentDiv.appendChild(addButton);
+            studentResults.appendChild(studentDiv);
+        });
+    });
+</script> -->
+
+</body>
+
+</html>
